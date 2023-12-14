@@ -1,0 +1,54 @@
+@import "src/assets/themes/variables";
+
+.projects {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+    padding: 20px 0;
+
+    .projects__header-image {
+        width: 100%;
+        max-width: 1000px;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .projects__title {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .projects__title-about {
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .projects__title-subtitle {
+            font-size: 17px;
+            font-family: $fontBrand;
+        }
+    }
+
+    .projects__description {
+        width: 100%;
+        max-width: 1000px;
+        text-align: justify;
+        font-size: 18px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .projects__sample-card-content {
+        h2 {
+            font-weight: 400;
+        }
+    }
+}

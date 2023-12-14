@@ -1,0 +1,37 @@
+@import "src/assets/themes/variables";
+
+.projects-ui-ux {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+    padding: 20px 0;
+
+    .projects-ui-ux__header-card-content {
+        h3 {
+            font-weight: 400;
+        }
+    }
+
+    .projects-ui-ux__sample-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        p {
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .projects-ui-uix__behance {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

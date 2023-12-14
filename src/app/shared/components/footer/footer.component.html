@@ -1,0 +1,8 @@
+<div class="footer">
+    <ng-container *ngIf="!themeService.isDarkMode">
+        <img src="assets/images/common/footer-manchas-brancas.png">
+    </ng-container>
+    <ng-container *ngIf="themeService.isDarkMode">
+        <img src="assets/images/common/footer-manchas-preta.png">
+    </ng-container>
+</div>

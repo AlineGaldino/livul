@@ -1,0 +1,44 @@
+<app-page-wrapper>
+    <app-header> </app-header>
+    <div class="projects-design">
+        <app-sample-card [source]="getEditionSource()" [reverse]="true">
+            <div class="projects-design__header-card-content">
+                <h1> Design </h1>
+                <h3>
+                    Edições e criação de folders, no que precisar <br>
+                    nesses parâmetros, meus projetos dão conta.
+                </h3>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/logo-entalhado-mockup.png">
+            <div class="projects-design__sample-card-content">
+                <p>
+                    <strong> Mockup em papel: </strong>
+                    <span>
+                        Utilizei a logo da livul para a criação de um mockup com o photoshop, onde além
+                        da perspectiva, também utilizei um efeito para que ficasse demarcado.
+                    </span>
+                </p>
+                <app-round-button (click)="open('assets/images/cards/logo-entalhado-mockup.png')">
+                    Veja o projeto em detalhes
+                </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/saudaFio-capa-tela-salada.jpg">
+            <div class="projects-design__sample-card-content">
+                <p>
+                    <strong> Mockup em iphone: </strong>
+                    <span>
+                        Edição simples de como o produto da saudafio! ficaria em um celular, alterei a
+                        perspectiva para que se encaixasse bem ao angulo proposto pello mockup.
+                    </span>
+                </p>
+                <app-round-button (click)="open('assets/images/cards/saudaFio-capa-tela-salada.jpg')">
+                    Veja o projeto em detalhes
+                </app-round-button>
+            </div>
+        </app-sample-card>
+    </div>
+    <app-contact> </app-contact>
+    <app-footer> </app-footer>
+</app-page-wrapper>

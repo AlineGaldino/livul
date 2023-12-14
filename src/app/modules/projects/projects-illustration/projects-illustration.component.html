@@ -1,0 +1,43 @@
+<app-page-wrapper>
+    <app-header> </app-header>
+    <div class="projects-illustration">
+        <app-sample-card [source]="getOunceSource()" [reverse]="true">
+            <div class="projects-illustration__header-card-content">
+                <h1> Illustration </h1>
+                <h3>
+                    De ilustrações tradicionais a criação de logos <br>
+                    digitais, executo os dois tipos de projetos.
+                </h3>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/stock-girl.jpg">
+            <div class="projects-illustration__sample-card-content">
+                <p>
+                    <strong> Funcionaria fazendo o estoque: </strong>
+                    <span>
+                        ilustração planejada para ficar na aba de compras ou na aba em um sistema interno de estoque
+                    </span>
+                </p>
+                <app-round-button (click)="open('assets/images/cards/stock-girl.jpg')">
+                    Veja o projeto em detalhes
+                </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card [source]="getLogoSource()">
+            <div class="projects-illustration__sample-card-content">
+                <p>
+                    <strong> Logo livul: </strong>
+                    <span>
+                        ilustração feita com bases em referencias e inspirações de uma onça pintada, para trazer
+                        brasilidade a marca, sem deixar para trás suas raízes.
+                    </span>
+                </p>
+                <app-round-button (click)="open(getLogoSource())">
+                    Veja o projeto em detalhes
+                </app-round-button>
+            </div>
+        </app-sample-card>
+    </div>
+    <app-contact> </app-contact>
+    <app-footer> </app-footer>
+</app-page-wrapper>

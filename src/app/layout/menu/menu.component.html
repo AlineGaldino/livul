@@ -1,0 +1,17 @@
+<div [ngClass]="{
+    'menu-float': true,
+    'menu-float--dark': themeService.isDarkMode
+}">
+    <a class="menu-float__logo" href="/">
+        LIVULART
+    </a>
+    <div class="menu-float__actions">
+        <a href="/ui"> UI/UX DESIGN </a>
+        <a href="/illustration"> ILLUSTRATION </a>
+        <a href="/design"> DESIGN </a>
+        <app-toggle> </app-toggle>
+    </div>
+</div>
+<div class="menu-content">
+    <router-outlet></router-outlet>
+</div>

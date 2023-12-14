@@ -1,0 +1,9 @@
+<div [ngClass]="{
+    'sample-card': true,
+    'sample-card--reverse': reverse
+}">
+    <img class="sample-card__image" [attr.src]="source">
+    <div class="sample-card__content">
+        <ng-content></ng-content>
+    </div>
+</div>

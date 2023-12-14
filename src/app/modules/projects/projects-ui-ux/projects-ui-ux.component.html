@@ -1,0 +1,74 @@
+<app-page-wrapper>
+    <app-header> </app-header>
+    <div class="projects-ui-ux">
+        <app-sample-card [source]="getDeviceSource()" [reverse]="true">
+            <div class="projects-ui-ux__header-card-content">
+                <h1> UI/UX Design </h1>
+                <h3>
+                    Meus projetos abrangem desde a pesquisa a <br> execução de suas interfaces. <br>
+                    Escolha um para o ver em detalhes.
+                </h3>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/apresentacao-saudafio.png">
+            <div class="projects-ui-ux__sample-card-content">
+                <p>
+                    <strong> SaudaFio! Hábitos saudáveis: </strong>
+                    <span>
+                        Aplicação mobile para jovens cansados que desejam ter um estilo de vida mais saudável, as
+                        funcionalidades focam em dicas iniciais com recomendações de exercícios e receitas a partir das
+                        escolhas do usuário. Tem como objetivo auxiliar o consumo consciente de conteúdos sobre saúde e
+                        estética.
+                    </span>
+                </p>
+                <app-round-button href="https://www.behance.net/gallery/183509273/SaudaFio-Habitos-saudaveis-(UXUI)">
+                    Veja o projeto no behance
+                </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/study-case-aumigo.png">
+            <div class="projects-ui-ux__sample-card-content">
+                <p>
+                    <strong> Adote um aumigo ou um purrceiro: </strong>
+                    <span>
+                        Aplicativo mobile para auxiliar a causa animal, tanto na adoção de animais quanto para
+                        arrecadações de fundos e voluntários. Minha pesquisa foi voltada a pessoas que conheci no meio e
+                        que resgatam animais em situação de rua. Ouvi suas dores e tentei entender o'que poderia ser
+                        transformado em uma aplicação mobile. Novamente utilizei o Miro para a
+                        organização das informações assim como o docs para documentação e em seguida construi os
+                        protótipos no figma.
+                    </span>
+                </p>
+                <app-round-button href="https://www.behance.net/gallery/179309681/Adopt-an-aumigo-adoption-application-(UXUI)">
+                    Veja o projeto no behance
+                </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card source="assets/images/cards/sao-benedito.png">
+            <div class="projects-ui-ux__sample-card-content">
+                <p>
+                    <strong> São Benedito Padroeiro Hospital: </strong>
+                    <span>
+                        Aplicação mobile para um hospital, que tem como intuito auxiliar e
+                        tornar mais simples a vida do paciente, para que ele possa ver suas consultas marcadas, o
+                        resultado de seus exames. Receba atualizações sobre campanhas do hospital e possa salvar o
+                        horário de tomar cada um dos seus remédios. A pesquisa foi centrada nas principais
+                        funcionalidades informativas que seriam complementares aos serviços do hospital, a organização
+                        novamente foi feita no Miro e sua construção foi feita através do figma.
+                    </span>
+                </p>
+                <app-round-button href="https://www.behance.net/gallery/180775713/Sao-Benedito-Appointments-aplication-(UXUI)">
+                    Veja o projeto no behance
+                </app-round-button>
+            </div>
+        </app-sample-card>
+        <div class="projects-ui-uix__behance">
+            <h2> Veja esse e mais outros projetos no: </h2>
+            <app-round-button [solid]="true" href="">
+                Behance
+            </app-round-button>
+        </div>
+    </div>
+    <app-contact> </app-contact>
+    <app-footer> </app-footer>
+</app-page-wrapper>

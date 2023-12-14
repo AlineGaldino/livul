@@ -1,0 +1,21 @@
+@import "src/assets/themes/variables";
+
+.sample-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+
+    &.sample-card--reverse{
+        flex-direction: row-reverse;
+    }
+
+    .sample-card__image {
+        width: 300px;
+    }
+
+    .sample-card__content {
+        width: 450px;
+        height: 100%;
+    }
+}

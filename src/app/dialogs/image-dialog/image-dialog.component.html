@@ -1,0 +1,11 @@
+<div mat-dialog-content class="image-dialog">
+    <img [attr.src]="path">
+</div>
+<div mat-dialog-actions>
+    <button mat-button [ngClass]="{
+        'image-dialog-button': true,
+        'image-dialog-button--dark': themeService.isDarkMode 
+    }" (click)="cancel()">
+        Fechar
+    </button>
+</div>

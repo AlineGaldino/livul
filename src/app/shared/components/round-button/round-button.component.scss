@@ -1,0 +1,32 @@
+@import "src/assets/themes/variables";
+
+.round-button {
+    font-weight: 500;
+    border-radius: 35px;
+    padding: 8px 16px;
+    color: $dark;
+    border: solid 2px $dark;
+    background-color: $light;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.round-button--dark {
+        color: $light;
+        background-color: $dark;
+        border: solid 2px $light;
+    }
+
+    &.round-button--solid {
+        color: $light;
+        background-color: $dark;
+        border: solid 2px $dark;
+
+        &.round-button--dark {
+            color: $dark;
+            background-color: $light;
+            border: solid 2px $light;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "src/assets/themes/variables";
+
+.image-dialog {
+    img {
+        width: 100%;
+        max-height: 70vh;
+    }
+}
+
+.image-dialog-button {
+    background-color: $light;
+    color: $dark;
+
+    &.image-dialog-button--dark{
+        background-color: $dark;
+        color: $light;
+    }
+}

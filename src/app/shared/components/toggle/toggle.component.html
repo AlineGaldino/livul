@@ -1,0 +1,9 @@
+<input
+    type="checkbox"
+    [ngClass]="{
+        'toggle': true,
+        'toggle--dark': themeService.isDarkMode
+    }"
+    [(ngModel)]="themeService.isDarkMode"
+    (change)="themeService.setTheme(themeService.isDarkMode)"
+/>

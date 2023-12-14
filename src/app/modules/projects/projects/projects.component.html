@@ -1,0 +1,59 @@
+<app-page-wrapper>
+    <div class="projects">
+        <img class="projects__header-image" [src]="getHeaderSource()">
+        <div class="projects__title">
+            <h2 class="projects__title-about">
+                UI/UX Design - Illustration - Design
+            </h2>
+            <div class="projects__title-subtitle">
+                UI-UX Design, Ilustrações e design <br> Por Aline Galdino
+            </div>
+        </div>
+        <p class="projects__description">
+            Com formação em UI/UX design pela google, sou especialista em moldar experiências visuais. Utilizo Adobe XD
+            e Figma para criar projetos de user interface que não apenas impressionam, mas também impulsionam a
+            interatividade, utilizando o photoshop para edições mais complexas, além disso, possuo uma sólida
+            experiência de doze anos na ilustração tradicional, hoje me aventuro pela arte digital, explorando todo o
+            ambiente de design system.
+        </p>
+        <p class="projects__description">
+            Do design system ao branding e a logomarca, construa uma identidade e visual solida e memorável para a sua
+            marca, minha abordagem une o conhecimento acadêmico, habilidades técnicas e uma paixão duradoura para criar
+            experiências visuais impactantes.
+        </p>
+        <p class="projects__description">
+            Vamos transformar sua visão em realidade visual, elevando sua presença digital e destacando sua marca de
+            maneira única no mercado.
+        </p>
+        <app-round-button [solid]="true" href="https://www.linkedin.com/in/galdinoaline/">
+            Solicitar orçamento
+        </app-round-button>
+        <app-sample-card [source]="getDeviceSource()">
+            <div class="projects__sample-card-content">
+                <h2>
+                    Criação de landing pages e design mobile visando as necessidades do usuário.
+                </h2>
+                <app-round-button href="/ui"> Projetos UI/UX </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card [source]="getOunceSource()" [reverse]="true">
+            <div class="projects__sample-card-content">
+                <h2>
+                    Contando historias da sua marca, criando sua identidade e seu visuais online de forma consistente e
+                    criativa.
+                </h2>
+                <app-round-button href="/illustration"> Ilustrações </app-round-button>
+            </div>
+        </app-sample-card>
+        <app-sample-card [source]="getEditionSource()">
+            <div class="projects__sample-card-content">
+                <h2>
+                    Editando uma pagina, uma logo ou um folder para uma melhor compreensão de ambos.
+                </h2>
+                <app-round-button href="/design"> Design </app-round-button>
+            </div>
+        </app-sample-card>
+    </div>
+    <app-contact> </app-contact>
+    <app-footer> </app-footer>
+</app-page-wrapper>

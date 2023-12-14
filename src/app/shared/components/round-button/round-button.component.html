@@ -1,0 +1,8 @@
+<a [ngClass]="{ 
+    'round-button': true,
+    'round-button--solid': solid,
+    'round-button--dark': themeService.isDarkMode 
+}"
+    (click)="handleClick($event)">
+    <ng-content></ng-content>
+</a>

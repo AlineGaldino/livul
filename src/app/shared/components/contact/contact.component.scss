@@ -1,0 +1,21 @@
+@import "src/assets/themes/variables";
+
+.contact {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .contact__title {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .contact__subtitle {
+        font-size: 18px;
+        font-family: $fontBrand;
+    }
+}
