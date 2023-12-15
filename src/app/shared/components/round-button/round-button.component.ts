@@ -11,7 +11,6 @@ import { ThemeService } from '../../services/theme.service';
 export class RoundButtonComponent {
     @Input() solid?: boolean = false;
     @Input() href?: string = '';
-    @Input() routerLink?: string = '';
 
     constructor(
         public readonly themeService: ThemeService,
