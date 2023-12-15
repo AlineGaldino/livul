@@ -1,0 +1,89 @@
+@import "src/assets/themes/variables";
+
+html,
+body {
+    background-color: $light;
+    font-family: $font;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: color ease 500ms;
+    color: $dark;
+
+    a {
+        color: $dark;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $dark;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $light;
+        background-color: $light;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba($dark, 0.5);
+    }
+
+    .custom-image-dialog .mat-dialog-container {
+        background-color: $light;
+    }
+}
+
+body[data-theme="dark"] {
+    background-color: $dark;
+    color: $light;
+
+    a {
+        color: $light;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $light;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 1px $dark;
+        background-color: $dark;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba($light, 0.5);
+    }
+
+    .custom-image-dialog .mat-dialog-container {
+        background-color: $dark;
+    }
+}
+
+a {
+    text-decoration: none !important;
+    user-select: none;
+    transition: ease all 500 ms;
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-image-dialog .mat-dialog-container {
+    padding: 10px;
+    background-color: yellow;
+
+    div[mat-dialog-actions] {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
